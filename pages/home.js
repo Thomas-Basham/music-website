@@ -17,10 +17,10 @@ const flickityOptions = {
       
       
       <Flickity
-      className={'carousel'} // default ''
+      className={'carousel margin-block-24'} // default ''
       elementType={'div'} // default 'div'
       options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
+      disableImagesLoaded={true} // default false
       reloadOnUpdate // default false
       static // default false
 
@@ -29,6 +29,9 @@ const flickityOptions = {
       <img alt='img' src="https://excision.ca/wp-content/uploads/2022/01/Excision_onyx_WebSlider_OUTNOW-1200x628.jpg" width={1000}/>
       <img alt='img' src="https://excision.ca/wp-content/uploads/2022/01/Excision_onyx_WebSlider_OUTNOW-1200x628.jpg" width={1000}/>
     </Flickity>
+
+
+    
       
       </>
   )
