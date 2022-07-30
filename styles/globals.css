@@ -87,7 +87,7 @@ footer nav {
 footer .nav-link svg {
   font-size: 100px !important;
   margin: 7px;
-  padding: 20px !important;
+  padding: 35px !important;
   border: solid white 1px;
   border-radius: 50%;
 }
@@ -110,6 +110,18 @@ footer .nav-link svg {
 }
 
 /* FLICKITY */
+
+
+.carousel-cell {
+  width: 100% !important; /* full width */
+  height: 520px;
+  background: #222;
+  /* center images in cells with flexbox */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 .flickity-prev-next-button{
 
 background: url("https://excision.ca/wp-content/themes/excision/img/right-arrow.png") !important;
