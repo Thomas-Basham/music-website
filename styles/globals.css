@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +9,18 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background: black;
+  background: black;
+
+}
+
+body div div {
+  background: black;
+
+}
+
+main {
+  min-height: 50vh;
+  background: black;
 
 }
 
@@ -28,6 +38,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
@@ -50,16 +61,43 @@ a {
   color: darkgrey !important;
 }
 
-.nav-link svg{
+.nav-link svg {
   font-size: 28px;
 }
 
 .nav-link svg:hover {
   color: darkgrey;
 }
+.arrow-icon {
+  position: absolute;
 
+}
 .link-container:hover .arrow-icon {
   display: flex !important;
   position: absolute;
   top: -30px;
+}
+
+
+footer nav {
+  margin: 0 auto !important;
+}
+
+footer .nav-link svg {
+  font-size: 100px !important;
+  margin: 7px;
+  padding: 20px !important;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  footer .nav-link svg {
+    font-size: 65px !important;
+    margin: 7px;
+    padding: 20px !important;
+    border: solid white 1px;
+    border-radius: 50%;
+  }
 }

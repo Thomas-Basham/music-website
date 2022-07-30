@@ -1,7 +1,7 @@
 
 import Head from 'next/head'
 import Header from '../components/Header'
-
+import Footer from './Footer'
 export default function Layout({ children }) {
 
 
@@ -12,7 +12,9 @@ export default function Layout({ children }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
                 <Header/>
-            {/* <main className="w-5/6 mx-auto">{children}</main> */}
+            <main className="w-5/6 mx-auto">{children}</main>
+      
+            <Footer/>    
         </div>
     )
 }
