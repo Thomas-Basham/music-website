@@ -22,8 +22,8 @@ export default function Footer() {
     <MailchimpSubscribe
       url={url}
       render={({ subscribe, status, message }) => (
-        <div className="my-6" style={{position: 'relative', left: "20px"}}>
-          <SimpleForm onSubmitted={(formData) => subscribe(formData)}  />
+        <div className="my-6" style={{ position: "relative", left: "20px" }}>
+          <SimpleForm onSubmitted={(formData) => subscribe(formData)} />
           {status === "sending" && (
             <div style={{ color: "blue" }}>sending...</div>
           )}
@@ -51,7 +51,7 @@ export default function Footer() {
         height={150}
       />
 
-      <CustomForm/>
+      <CustomForm />
 
       <Navbar bg="black" expand="lg" variant="dark" fixed="bottom" />
       <nav className="flex items-center justify-around w-64 ">
