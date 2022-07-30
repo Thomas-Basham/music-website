@@ -34,24 +34,32 @@ a {
   }
 }
 
+.menu-dots {
+  color: darkgrey !important;
+  font-size: 18px !important;
 
-.nav-links .menu-dots {
-	/* background: url(../img/menu-dots.png); */
-	background-repeat: no-repeat;
-	background-position-y: 50%;
-	width: 8px;
-	height: 16px;
-	background-position-x: 50%;
-	margin-right: 5px;
-	margin-top: auto;
-	margin-bottom: auto;
-  content: '\2807';
 }
+
 
 .nav-link {
   color: white !important;
+  font-size: 18px !important;
 }
 
 .nav-link:hover {
   color: darkgrey !important;
+}
+
+.nav-link svg{
+  font-size: 28px;
+}
+
+.nav-link svg:hover {
+  color: darkgrey;
+}
+
+.link-container:hover .arrow-icon {
+  display: flex !important;
+  position: absolute;
+  top: -30px;
 }
