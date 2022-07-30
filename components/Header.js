@@ -10,10 +10,14 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-bootstrap";
 import { RiArrowDownSFill } from "react-icons/ri";
+import {useRouter} from 'next/router';
 
 export default function Header() {
+  const router = useRouter()
+  console.log(router.pathname)
+
   return (
-    <header className="bg-black w-100vw border-green-400">
+    <header className="bg-black border-green-400 w-100vw">
       <Navbar bg="black" expand="lg" variant="dark">
         <Container fluid>
           <Navbar.Brand href="/home">
@@ -28,49 +32,63 @@ export default function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <div className="link-container flex flex-col align-center items-center">
+              <div className="flex flex-col items-center link-container align-center">
                 <RiArrowDownSFill
                   className="arrow-icon"
                   color="white"
-                  fontSize={80}
-                  style={{ display: "none" }}
+                  fontSize={90}
+                  style= {router.pathname == '/music' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
                 />
-                <Nav.Link href="/music" className="d-flex items-center">
+                <Nav.Link href="/music" className="items-center d-flex">
                   {" "}
                   <BiDotsVerticalRounded className="menu-dots " /> MUSIC
                 </Nav.Link>
               </div>
 
-              <div className="link-container flex flex-col align-center items-center">
+              <div className="flex flex-col items-center link-container align-center">
                 <RiArrowDownSFill
                   className="arrow-icon"
                   color="white"
-                  fontSize={80}
-                  style={{ display: "none" }}
+                  fontSize={90}
+                  style= {router.pathname == '/videos' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
                 />
 
-                <Nav.Link href="/about" className="d-flex items-center">
+                <Nav.Link href="/videos" className="items-center d-flex">
                   {" "}
-                  <BiDotsVerticalRounded className="menu-dots" /> ABOUT
+                  <BiDotsVerticalRounded className="menu-dots" /> VIDEOS
                 </Nav.Link>
               </div>
 
-              <div className="link-container flex flex-col align-center items-center">
+              <div className="flex flex-col items-center link-container align-center">
                 <RiArrowDownSFill
                   className="arrow-icon"
                   color="white"
-                  fontSize={80}
-                  style={{ display: "none" }}
+                  fontSize={90}
+                  style= {router.pathname == '/news' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
                 />
 
-                <Nav.Link href="/news" className="d-flex items-center">
+                <Nav.Link href="/news" className="items-center d-flex">
                   {" "}
                   <BiDotsVerticalRounded className="menu-dots" /> NEWS
                 </Nav.Link>
               </div>
+
+              <div className="flex flex-col items-center link-container align-center">
+                <RiArrowDownSFill
+                  className="arrow-icon"
+                  color="white"
+                  fontSize={90}
+                  style= {router.pathname == '/bio' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
+                />
+
+                <Nav.Link href="/bio" className="items-center d-flex">
+                  {" "}
+                  <BiDotsVerticalRounded className="menu-dots" /> BIO
+                </Nav.Link>
+              </div>
             </Nav>
 
-            <nav className="w-64 flex items-center justify-around">
+            <nav className="flex items-center justify-around w-64">
               <NavLink>
                 <AiFillInstagram />
               </NavLink>

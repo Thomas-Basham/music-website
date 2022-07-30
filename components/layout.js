@@ -1,22 +1,19 @@
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "./Footer";
 
-import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from './Footer'
 
 export default function Layout({ children }) {
+  return (
+    <div>
+      <Head>
+        <title>Tommy Basham Official Site | Music, Videos, News & more</title>
+        <link rel="icon" href="/logo-icon.png" />
+      </Head>
+      <Header />
+      <main className="w-5/6 mx-auto mb-24">{children}</main>
 
-
-    return (
-        <div>
-            <Head>
-                <title>Tommy Basham Official Site | Music, Videos, News & more</title>
-                <link rel="icon" href="/favicon.ico" />
-            
-            </Head>
-                <Header/>
-            <main className="w-5/6 mx-auto mb-24">{children}</main>
-      
-            <Footer/>    
-        </div>
-    )
+      <Footer />
+    </div>
+  );
 }
