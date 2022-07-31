@@ -31,16 +31,7 @@ export default function Videos() {
       },
       title: "Lonely Me - Tommy Basham Lyric Video",
     },
-    {
-      id: "OFQ5OmEHt44",
-      url: function () {
-        return `https://www.youtube.com/embed/${this.id}`;
-      },
-      placeHolder: function () {
-        return `https://img.youtube.com/vi/${this.id}/3.jpg`;
-      },
-      title: "Lonely Me - Tommy Basham Lyric Video",
-    },
+
     {
       id: "OFQ5OmEHt44",
       url: function () {
@@ -101,7 +92,7 @@ export default function Videos() {
 
   const thumbnails = videos.map((video, i) => {
     return (
-      <div key={i} className="thumbnail-div">
+      <div key={i} className="m-2 border border-white thumbnail-div">
         <img
           onClick={() => flickityHandler(i)}
           className="mb-6"
@@ -120,7 +111,7 @@ export default function Videos() {
     <>
       {flickityOpen && (
         <Flickity
-          className={"carousel mb-24"} // default ''
+          className={"carousel mb-6 "} // default ''
           elementType={"div"} // default 'div'
           options={flickityOptions} // takes flickity options {}
           disableImagesLoaded={true} // default false
@@ -130,7 +121,7 @@ export default function Videos() {
           {videoIframes}
         </Flickity>
       )}
-      <Row lg={4} sm={1} className="">
+      <Row lg={5} sm={1} className="p-6" style={{margin: "0 auto"}}>
         {thumbnails}
       </Row>
     </>

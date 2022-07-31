@@ -14,10 +14,9 @@ import {useRouter} from 'next/router';
 
 export default function Header() {
   const router = useRouter()
-  console.log(router.pathname)
 
   return (
-    <header className="mb-56 bg-black border-green-400 w-100vw">
+    <header className="mb-48 bg-black border-green-400 w-100vw">
       <Navbar bg="black" expand="lg" variant="dark" fixed="top" >
         <Container fluid>
           <Navbar.Brand href="/">
