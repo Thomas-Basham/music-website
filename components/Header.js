@@ -17,8 +17,8 @@ export default function Header() {
   console.log(router.pathname)
 
   return (
-    <header className="bg-black border-green-400 w-100vw">
-      <Navbar bg="black" expand="lg" variant="dark">
+    <header className="mb-56 bg-black border-green-400 w-100vw">
+      <Navbar bg="black" expand="lg" variant="dark" fixed="top" >
         <Container fluid>
           <Navbar.Brand href="/home">
             <Image

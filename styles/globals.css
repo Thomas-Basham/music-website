@@ -190,11 +190,11 @@ footer input {
   height: 60px !important;
 }
 
-button {
+footer button {
   visibility: hidden;
 }
 
-button:after {
+footer button:after {
   content: 'Subscribe' !important;
   visibility: visible !important;
   background-color: white !important;
@@ -207,3 +207,4 @@ button:after {
 :placeholder-shown {
   padding: 20px;
 }
+
