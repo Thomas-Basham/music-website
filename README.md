@@ -11,3 +11,5 @@ A static web page used for showcasing a modern music artist
 [react-icons](https://react-icons.github.io/react-icons)
 
 [Flickity](https://flickity.metafizzy.co/)
+
+[FSLightbox](https://fslightbox.com/react/documentation/updating-props)
