@@ -42,7 +42,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="mb-12 text-center">
+    <footer className="mb-12 text-center" >
       <Image
         className="border-white rounded-full"
         src={LogoIcon}

@@ -13,3 +13,5 @@ A static web page used for showcasing a modern music artist
 [Flickity](https://flickity.metafizzy.co/)
 
 [FSLightbox](https://fslightbox.com/react/documentation/updating-props)
+
+[React Mail Chimp](https://github.com/revolunet/react-mailchimp-subscribe#readme)

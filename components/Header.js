@@ -20,7 +20,7 @@ export default function Header() {
     <header className="mb-56 bg-black border-green-400 w-100vw">
       <Navbar bg="black" expand="lg" variant="dark" fixed="top" >
         <Container fluid>
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="/">
             <Image
               src={Logo}
               alt="Logo"
