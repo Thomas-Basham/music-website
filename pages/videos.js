@@ -32,46 +32,6 @@ export default function Videos() {
       title: "Lonely Me - Tommy Basham Lyric Video",
     },
 
-    {
-      id: "OFQ5OmEHt44",
-      url: function () {
-        return `https://www.youtube.com/embed/${this.id}`;
-      },
-      placeHolder: function () {
-        return `https://img.youtube.com/vi/${this.id}/3.jpg`;
-      },
-      title: "Lonely Me - Tommy Basham Lyric Video",
-    },
-    {
-      id: "OFQ5OmEHt44",
-      url: function () {
-        return `https://www.youtube.com/embed/${this.id}`;
-      },
-      placeHolder: function () {
-        return `https://img.youtube.com/vi/${this.id}/3.jpg`;
-      },
-      title: "Lonely Me - Tommy Basham Lyric Video",
-    },
-    {
-      id: "OFQ5OmEHt44",
-      url: function () {
-        return `https://www.youtube.com/embed/${this.id}`;
-      },
-      placeHolder: function () {
-        return `https://img.youtube.com/vi/${this.id}/3.jpg`;
-      },
-      title: "Lonely Me - Tommy Basham Lyric Video",
-    },
-    {
-      id: "OFQ5OmEHt44",
-      url: function () {
-        return `https://www.youtube.com/embed/${this.id}`;
-      },
-      placeHolder: function () {
-        return `https://img.youtube.com/vi/${this.id}/3.jpg`;
-      },
-      title: "Lonely Me - Tommy Basham Lyric Video",
-    },
   ];
 
   const videoIframes = videos.map((video, i) => {

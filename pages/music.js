@@ -7,8 +7,7 @@ import SpotifyPlayer from "/components/SpotifyPlayer.js";
 export default function Home() {
   return (
     <>
-
-      <SpotifyPlayer />
+      {SpotifyPlayer("https://open.spotify.com/embed/artist/7fVW0REbd7DTaQCKgXBbHm?utm_source=generator&theme=0")}
     </>
   );
 }

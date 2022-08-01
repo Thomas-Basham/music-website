@@ -211,3 +211,7 @@ footer button:after {
   padding: 20px;
 }
 
+input {
+  color: white !important;
+}
+
