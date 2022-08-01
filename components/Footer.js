@@ -42,7 +42,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="mb-12 text-center" >
+    <footer className="text-center position-relative" >
       <Image
         className="border-white rounded-full"
         src={LogoIcon}
@@ -53,7 +53,7 @@ export default function Footer() {
 
       <CustomForm />
 
-      <Navbar bg="black" expand="lg" variant="dark" fixed="bottom" />
+      <Navbar bg="none" expand="lg" variant="dark"  />
       <nav className="flex items-center justify-around w-64 ">
         <NavLink>
           <AiFillInstagram />
