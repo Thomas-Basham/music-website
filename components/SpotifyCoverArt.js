@@ -22,7 +22,7 @@ export default function SpotifyCoverArt({ url }) {
   return (
     <>
       {spotifyData && (
-        <img alt={spotifyData.title} src={spotifyData.thumbnail_url} style={{margin: "0 auto"}} />
+        <img alt={spotifyData.title} src={spotifyData.thumbnail_url}  />
       )}
     </>
   );
