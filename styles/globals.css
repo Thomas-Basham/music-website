@@ -234,7 +234,7 @@ input {
   .flickity-prev-next-button.previous {
     left: 0;
     transform: rotate(180deg);
-    top: 33% !important;
+    top: 44% !important;
   }
   .article-content{
     flex-direction: column ;
