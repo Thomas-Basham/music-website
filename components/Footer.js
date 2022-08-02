@@ -15,6 +15,7 @@ import MailchimpSubscribe from "react-mailchimp-subscribe";
 export default function Footer() {
   const url = process.env.NEXT_PUBLIC_MAIL_CHIMP_URL;
 
+  
   // simplest form (only email)
   const SimpleForm = () => <MailchimpSubscribe url={url} />;
 

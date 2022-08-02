@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <>
 
+
       {SpotifyPlayer("https://open.spotify.com/embed/artist/7fVW0REbd7DTaQCKgXBbHm?utm_source=generator&theme=0")}
     </>
   );
