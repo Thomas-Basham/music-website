@@ -6,10 +6,10 @@ import "flickity/css/flickity.css";
 import SpotifyPlayer from "/components/SpotifyPlayer.js";
 import News from '/pages/news'
 import Link from "next/link";
-import portraitLayingDown from "/assets/portrait-laying-down.jpg"
-import portraitBlueShirt from "/assets/portrait-blue-shirt.jpg"
-import portraitYellowShirt from "/assets/portrait-yellow-shirt.jpg"
-import portraitStairs from "/assets/portrait-stairs.jpg"
+import portraitLayingDown from "/public/images/portrait-laying-down.jpg"
+import portraitBlueShirt from "/public/images/portrait-blue-shirt.jpg"
+import portraitYellowShirt from "/public/images/portrait-yellow-shirt.jpg"
+import portraitStairs from "/public/images/portrait-stairs.jpg"
 
 import Videos from "./videos";
 export default function Home() {

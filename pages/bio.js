@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
-import StairPortrait from "/assets/portrait-stairs.jpg";
+import StairPortrait from "/public/images/portrait-stairs.jpg";
 export default function Home() {
   return (
     <>
