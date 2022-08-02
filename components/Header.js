@@ -10,14 +10,14 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { NavLink } from "react-bootstrap";
 import { RiArrowDownSFill } from "react-icons/ri";
-import {useRouter} from 'next/router';
+import { useRouter } from "next/router";
 
 export default function Header() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <header className="mb-48 bg-black border-green-400 w-100vw">
-      <Navbar bg="black" expand="lg" variant="dark" fixed="top" >
+      <Navbar bg="black" expand="lg" variant="dark" fixed="top">
         <Container fluid>
           <Navbar.Brand href="/">
             <Image
@@ -36,7 +36,11 @@ export default function Header() {
                   className="arrow-icon"
                   color="white"
                   fontSize={90}
-                  style= {router.pathname == '/music' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
+                  style={
+                    router.pathname == "/music"
+                      ? { display: "flex", position: "absolute", top: "-35px" }
+                      : { display: "none" }
+                  }
                 />
                 <Nav.Link href="/music" className="items-center d-flex">
                   {" "}
@@ -49,7 +53,11 @@ export default function Header() {
                   className="arrow-icon"
                   color="white"
                   fontSize={90}
-                  style= {router.pathname == '/videos' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
+                  style={
+                    router.pathname == "/videos"
+                      ? { display: "flex", position: "absolute", top: "-35px" }
+                      : { display: "none" }
+                  }
                 />
 
                 <Nav.Link href="/videos" className="items-center d-flex">
@@ -63,7 +71,11 @@ export default function Header() {
                   className="arrow-icon"
                   color="white"
                   fontSize={90}
-                  style= {router.pathname == '/news' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
+                  style={
+                    router.pathname == "/news"
+                      ? { display: "flex", position: "absolute", top: "-35px" }
+                      : { display: "none" }
+                  }
                 />
 
                 <Nav.Link href="/news" className="items-center d-flex">
@@ -77,7 +89,11 @@ export default function Header() {
                   className="arrow-icon"
                   color="white"
                   fontSize={90}
-                  style= {router.pathname == '/bio' ? {  display: "flex", position: "absolute",   top: "-35px" } : {  display: "none" }}
+                  style={
+                    router.pathname == "/bio"
+                      ? { display: "flex", position: "absolute", top: "-35px" }
+                      : { display: "none" }
+                  }
                 />
 
                 <Nav.Link href="/bio" className="items-center d-flex">
@@ -88,19 +104,31 @@ export default function Header() {
             </Nav>
 
             <nav className="flex items-center justify-around w-64">
-              <NavLink>
+              <NavLink
+                href="https://www.instagram.com/tommyybasham"
+                target={"_blank"}
+              >
                 <AiFillInstagram />
               </NavLink>
 
-              <NavLink>
+              <NavLink
+                href="https://www.youtube.com/channel/UCLYKTC2tLKbS_zZFCwCIwDg/featured"
+                target={"_blank"}
+              >
                 <FaYoutube />
               </NavLink>
 
-              <NavLink>
+              <NavLink
+                href="https://open.spotify.com/artist/7fVW0REbd7DTaQCKgXBbHm?si=ZNcWQkGXTSiv0kbEZRSFKg"
+                target={"_blank"}
+              >
                 <FaSpotify />
               </NavLink>
 
-              <NavLink>
+              <NavLink
+                href="https://music.apple.com/us/artist/tommy-basham/1522008646"
+                target={"_blank"}
+              >
                 <FaItunes />
               </NavLink>
             </nav>

@@ -38,6 +38,7 @@ footer {
 
   width: 100%;
 }
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -97,22 +98,7 @@ footer .nav-link svg {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 600px) {
 
-  footer .nav-link svg {
-    font-size: 65px !important;
-    margin: 7px;
-    padding: 20px !important;
-    border: solid white 1px;
-    border-radius: 50%;
-  }
-
-  .flickity-prev-next-button.previous {
-    left: 0;
-    transform: rotate(180deg);
-    top: 33% !important;
-  }
-}
 
 /* FLICKITY */
 
@@ -189,21 +175,26 @@ footer .nav-link svg {
 }
 
 footer input {
-  width: 350px !important;
-  height: 60px !important;
+  width: 20% !important;
+  height: 40px !important;
+  padding: 6px;
+  margin-left: 40px;
 }
 
 footer button {
   visibility: hidden;
+
 }
 
-footer button:after {
+
+footer button:before {
   content: 'Subscribe' !important;
   visibility: visible !important;
   background-color: white !important;
-  padding: 20px !important;
-  position: relative;
-  right: 50px;
+  padding: 10px !important;
+  margin: 0 !important;
+  width: 2px !important;
+
   border-radius: 0 8px 8px 0;
 }
 
@@ -215,3 +206,37 @@ input {
   color: white !important;
 }
 
+
+
+
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-top: 250px;
+    padding: 2px !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer input {
+    width: 50% !important;
+
+  }
+
+  footer .nav-link svg {
+    font-size: 65px !important;
+    margin: 7px;
+    padding: 20px !important;
+    border: solid white 1px;
+    border-radius: 50%;
+  }
+
+  .flickity-prev-next-button.previous {
+    left: 0;
+    transform: rotate(180deg);
+    top: 33% !important;
+  }
+  .article-content{
+    flex-direction: column ;
+  }
+}

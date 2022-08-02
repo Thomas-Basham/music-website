@@ -35,9 +35,11 @@ export default function LonelyMeCoverArt() {
 
           <SongStreamingLinks />
 
-          <div className="justify-between clear-both d-flex">
+          <div className="justify-between clear-both d-flex article-content">
+            <div className="container">
             <SpotifyCoverArt url={LonelyMeUrl} />
-            <div className="" style={{ width: "60%" }}>
+            </div>
+            <div className="container player-holder" >
               {SpotifyPlayer(
                 "https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"
               )}
