@@ -3,6 +3,7 @@ import { FaInstagram, FaYoutube, FaSpotify, FaItunes } from "react-icons/fa";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { AiFillInstagram } from "react-icons/ai";
 import LogoIcon from "/assets/Logo-icon.png";
+
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
