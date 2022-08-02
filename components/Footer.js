@@ -47,7 +47,7 @@ export default function Footer() {
     <footer className="text-center position-relative" >
       <Image
         className="border-white rounded-full"
-        src={LogoIcon}
+        src='/images/Logo-icon.png'
         alt="tommy basham logo"
         width={150}
         height={150}
