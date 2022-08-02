@@ -53,7 +53,7 @@ export default function Videos() {
   const thumbnails = videos.map((video, i) => {
     return (
       <div key={i} className="m-2 border border-white thumbnail-div">
-        <img
+        <Image
           onClick={() => flickityHandler(i)}
           className="mb-6"
           alt={video.altTag}

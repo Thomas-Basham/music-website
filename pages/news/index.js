@@ -6,6 +6,7 @@ import { Row } from "react-bootstrap";
 import SpotifyPlayer from "../../components/SpotifyPlayer";
 import SpotifyCoverArt from "../../components/SpotifyCoverArt.js";
 import SongStreamingLinks from "../../components/SongStreamingLinks";
+import Link from "next/link";
 
 import { SiPandora } from "react-icons/si";
 import {
@@ -24,10 +25,11 @@ export default function LonelyMeCoverArt() {
   return (
     <>
       <Row lg={4} sm={1} className="pt-6 ">
-        <a
+        <Link
           href="/news/lonely-me"
           className="p-6 m-2 text-left text-white border-2 border-white w-100 text-decoration-none"
         >
+          <div className="p-6 w-100">
           <h3>Lonely Me Out Now</h3>
           <p className="float-left">January 7, 2022</p>
 
@@ -41,7 +43,8 @@ export default function LonelyMeCoverArt() {
               )}
             </div>
           </div>
-        </a>
+          </div>
+        </Link>
       </Row>
     </>
   );

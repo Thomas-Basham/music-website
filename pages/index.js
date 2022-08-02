@@ -5,7 +5,7 @@ import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 import SpotifyPlayer from "/components/SpotifyPlayer.js";
 import News from '/pages/news'
-
+import Link from "next/link";
 import portraitLayingDown from "/assets/portrait-laying-down.jpg"
 import portraitBlueShirt from "/assets/portrait-blue-shirt.jpg"
 import portraitYellowShirt from "/assets/portrait-yellow-shirt.jpg"
