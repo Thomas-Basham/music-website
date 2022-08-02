@@ -2,8 +2,7 @@ import Link from "next/link";
 import { FaInstagram, FaYoutube, FaSpotify, FaItunes } from "react-icons/fa";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { AiFillInstagram } from "react-icons/ai";
-// import LogoIcon from "../public/images/Logo-icon.png";
-
+import logo from '../public/images/logo-icon.png'
 import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -47,7 +46,7 @@ export default function Footer() {
     <footer className="text-center position-relative" >
       <Image
         className="border-white rounded-full"
-        src='/images/Logo-icon.png'
+        src={logo}
         alt="tommy basham logo"
         width={150}
         height={150}
