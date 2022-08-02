@@ -5,6 +5,7 @@ import Header from "../../components/Header";
 import { Row } from "react-bootstrap";
 import SpotifyPlayer from "../../components/SpotifyPlayer";
 import SpotifyCoverArt from "../../components/SpotifyCoverArt.js";
+import SongStreamingLinks from "../../components/SongStreamingLinks";
 
 import { SiPandora } from "react-icons/si";
 import {
@@ -30,59 +31,15 @@ export default function LonelyMeCoverArt() {
           <h3>Lonely Me Out Now</h3>
           <p className="float-left">January 7, 2022</p>
 
-          <div className="justify-around float-right ml-auto text-right w-25 d-flex text-decoration-none">
-            <a
-              href="https://found.ee/FEkeI"
-              className="text-white text-decoration-none"
-              title="Get it at Spotify"
-            >
-              <FaSpotify />
-            </a>
-            <a
-              href="https://found.ee/wlhci"
-              className="text-white text-decoration-none"
-              title="Get it at Apple Music"
-            >
-              <FaApple />
-            </a>
-            <a
-              href="https://found.ee/rI5Zt"
-              className="text-white text-decoration-none"
-              title="Get it at iTunes"
-            >
-              <FaItunes />
-            </a>
-            <a
-              href="https://found.ee/Qst2p"
-              className="text-white text-decoration-none"
-              title="Get it at Amazon"
-            >
-              <FaAmazon />
-            </a>
-            <a
-              href="https://found.ee/bI8ZBZ"
-              className="text-white text-decoration-none"
-              title="Get it at Pandora"
-            >
-              <SiPandora />
-            </a>
-            <a
-              href="https://found.ee/tcvzL1"
-              className="text-white text-decoration-none"
-              title="Get it at Deezer"
-            >
-              <FaDeezer />
-            </a>
-          </div>
+          <SongStreamingLinks />
 
-          <div className="justify-between clear-both d-flex" >
+          <div className="justify-between clear-both d-flex">
             <SpotifyCoverArt url={LonelyMeUrl} />
-           <div className="" style={{width: "70%"}}>
-            {SpotifyPlayer(
-              "https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"
-            )}
-         </div>
-         
+            <div className="" style={{ width: "60%" }}>
+              {SpotifyPlayer(
+                "https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"
+              )}
+            </div>
           </div>
         </a>
       </Row>

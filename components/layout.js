@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 
       <Header />
 
-      <main className="w-5/6 px-12 pt-px pb-12 mx-auto mb-20 bg-gray-900">
+      <main className="w-5/6 px-12 pt-px pb-12 mx-auto mb-20 leading-loose text-white bg-gray-900">
         { router.pathname != "/"  && 
         <div className="mb-12 page-title">
           <h1>{router.pathname.replace("/", "").replace("/", " / ").replace("-", " ").toUpperCase()}</h1>

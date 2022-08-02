@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function SpotifyCoverArt({ url }) {
   const [spotifyData, setSpotifyData] = useState("");
@@ -22,7 +23,7 @@ export default function SpotifyCoverArt({ url }) {
   return (
     <>
       {spotifyData && (
-        <img alt={spotifyData.title} src={spotifyData.thumbnail_url}  />
+        <Image alt={spotifyData.title} src={spotifyData.thumbnail_url} width="400%" height="100%" layout="" />
       )}
     </>
   );

@@ -6,6 +6,11 @@ import "flickity/css/flickity.css";
 import SpotifyPlayer from "/components/SpotifyPlayer.js";
 import News from '/pages/news'
 
+import portraitLayingDown from "/assets/portrait-laying-down.jpg"
+import portraitBlueShirt from "/assets/portrait-blue-shirt.jpg"
+import portraitYellowShirt from "/assets/portrait-yellow-shirt.jpg"
+import portraitStairs from "/assets/portrait-stairs.jpg"
+
 import Videos from "./videos";
 export default function Home() {
   const flickityOptions = {
@@ -24,24 +29,39 @@ export default function Home() {
         static // default false
       >
         <div className="carousel-cell">
-          <img
+          <Image
             alt="img"
-            src="https://excision.ca/wp-content/uploads/2022/01/Excision_onyx_WebSlider_OUTNOW-1200x628.jpg"
-            width={1000}
+            src={portraitStairs}
+            width={"950%"}
+            height={"700%"}
           />
         </div>
         <div className="carousel-cell">
-          <img
+          <Image
             alt="img"
-            src="https://excision.ca/wp-content/uploads/2022/01/Excision_onyx_WebSlider_OUTNOW-1200x628.jpg"
-            width={1000}
+            src={portraitBlueShirt}
+            width={"950%"}
+            height={"700%"}
+
           />
         </div>
         <div className="carousel-cell">
-          <img
+          <Image
             alt="img"
-            src="https://excision.ca/wp-content/uploads/2022/01/Excision_onyx_WebSlider_OUTNOW-1200x628.jpg"
-            width={1000}
+            src={portraitLayingDown}
+            width={"950%"}
+            height={"700%"}
+
+          />
+        </div>
+        <div className="carousel-cell">
+          <Image
+            alt="img"
+            src={portraitYellowShirt}
+            width={"900%"}
+            height={"700%"}
+
+
           />
         </div>
       </Flickity>
