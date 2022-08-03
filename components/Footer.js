@@ -20,7 +20,6 @@ export default function Footer() {
   // use the render prop and your custom form
   const CustomForm = () => (
     <MailchimpSubscribe
-    
       url={url}
       render={({ subscribe, status, message }) => (
         <SimpleForm onSubmitted={(formData) => subscribe(formData)} />
@@ -38,7 +37,10 @@ export default function Footer() {
         height={150}
       />
 
-      <div className=" form-holder" style={{ position: "relative", margin: "0 auto", }}>
+      <div
+        className=" form-holder"
+        style={{ position: "relative", margin: "0 auto" }}
+      >
         <CustomForm />
       </div>
       <Navbar bg="none" expand="lg" variant="dark" />

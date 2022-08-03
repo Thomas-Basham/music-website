@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ['i.scdn.co', 'img.youtube.com'],
 },
+
 }
 
 module.exports = nextConfig
