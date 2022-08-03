@@ -17,3 +17,5 @@ A static web page used for showcasing a modern music artist
 [FSLightbox](https://fslightbox.com/react/documentation/updating-props)
 
 [React Mail Chimp](https://github.com/revolunet/react-mailchimp-subscribe#readme)
+
+[next-sitemap](https://github.com/iamvishnusankar/next-sitemap)
