@@ -4,12 +4,12 @@ import styles from "../styles/Home.module.css";
 import Flickity from "react-flickity-component";
 import "flickity/css/flickity.css";
 import SpotifyPlayer from "/components/SpotifyPlayer.js";
-import News from '/pages/news'
+import News from "/pages/news";
 import Link from "next/link";
-import portraitLayingDown from "/public/images/portrait-laying-down.jpg"
-import portraitBlueShirt from "/public/images/portrait-blue-shirt.jpg"
-import portraitYellowShirt from "/public/images/portrait-yellow-shirt.jpg"
-import portraitStairs from "/public/images/portrait-stairs.jpg"
+import portraitLayingDown from "/public/images/portrait-laying-down.jpg";
+import portraitBlueShirt from "/public/images/portrait-blue-shirt.jpg";
+import portraitYellowShirt from "/public/images/portrait-yellow-shirt.jpg";
+import portraitStairs from "/public/images/portrait-stairs.jpg";
 
 import Videos from "./videos";
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
             alt="img"
             src={portraitStairs}
             width={"950%"}
-            height={"700%"}
+            height={"550%"}
           />
         </div>
         <div className="carousel-cell">
@@ -41,27 +41,16 @@ export default function Home() {
             alt="img"
             src={portraitBlueShirt}
             width={"950%"}
-            height={"700%"}
-
+            height={"550%"}
           />
         </div>
-        <div className="carousel-cell">
-          <Image
-            alt="img"
-            src={portraitLayingDown}
-            width={"950%"}
-            height={"700%"}
 
-          />
-        </div>
         <div className="carousel-cell">
           <Image
             alt="img"
             src={portraitYellowShirt}
             width={"900%"}
-            height={"700%"}
-
-
+            height={"550%"}
           />
         </div>
       </Flickity>
@@ -78,8 +67,7 @@ export default function Home() {
         <h1>NEWS</h1>
       </div>
 
-          <News/>
-      
+      <News />
     </>
   );
 }

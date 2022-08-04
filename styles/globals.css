@@ -213,7 +213,8 @@ input {
 @media only screen and (max-width: 600px) {
   main {
     margin-top: 250px;
-    padding: 2px !important;
+    padding: 6px !important;
+    padding-inline: 20px !important;
     display: flex;
     flex-direction: column;
   }
@@ -238,5 +239,14 @@ input {
   }
   .article-content{
     flex-direction: column ;
+  }
+
+  .song-streaming-links{
+    width:50% !important;
+  }
+
+  .carousel-cell {
+    height: max-content;
+    margin: auto !important;
   }
 }

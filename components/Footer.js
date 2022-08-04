@@ -29,13 +29,17 @@ export default function Footer() {
 
   return (
     <footer className="text-center position-relative">
+              <NavLink
+          href="/"
+        >
       <Image
         className="border-white rounded-full"
         src={logo}
         alt="tommy basham logo"
         width={150}
         height={150}
-      />
+        />
+        </NavLink>
 
       <div
         className=" form-holder"
