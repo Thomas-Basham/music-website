@@ -9,7 +9,7 @@ export default function Index() {
         <NewsTab
           link="gimme-loot"
           headLine="Gimme Loot Out Now"
-          date="August 17, 2022"
+          date="August 11, 2022"
           spotifyTrackID="2KeqRslwPKHlyfbtTXjsX1"
           deezer="https://www.deezer.com/us/album/343200227"
           amazon="https://music.amazon.com/albums/B0B8C5PBQX?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_HnlGxfjCBk0qxyIrbnTCzaEWC"
