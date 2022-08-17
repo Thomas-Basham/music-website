@@ -9,7 +9,7 @@ export default function Home() {
     <>
 
 
-      {SpotifyPlayer("https://open.spotify.com/embed/artist/7fVW0REbd7DTaQCKgXBbHm?utm_source=generator&theme=0")}
+      <SpotifyPlayer url="https://open.spotify.com/embed/artist/7fVW0REbd7DTaQCKgXBbHm?utm_source=generator&theme=0"/>
     </>
   );
 }
