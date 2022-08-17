@@ -18,7 +18,7 @@ export default function lonelyMeNewsPost() {
         <h3 className="clear-both">Lonely Me Out Now</h3>
         <p className="ml-auto float-end ">January 7, 2022</p>
       </div>
-      <SongStreamingLinks spotify="https://open.spotify.com/album/4fTxg8tjCU1NUDYEywQLV1" apple="https://music.apple.com/us/album/lonely-me-single/1603526055?uo=4" amazon="https://music.amazon.com/albums/B09PTBL81N?tag=fndcmpgns-20" pandora="https://www.pandora.com/artist/tommy-basham/lonely-me-single/ALhzxdqqc5XXkJP" deezer="https://www.deezer.com/us/album/285645392"   />
+      <SongStreamingLinks />
       <div className="mt-2">
         {SpotifyPlayer(
           "https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"

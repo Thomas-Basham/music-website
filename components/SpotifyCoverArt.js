@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function SpotifyCoverArt({ url }) {
   const [spotifyData, setSpotifyData] = useState("");
 
-  // "https://open.spotify.com/oembed?url=" + url = Spotify JSON Data
+  // "https://open.spotify.com/oembed?url=" + "http://open.spotify.com/track/0UJTi2a46HRnFD8wGFYjil?si=db7b62083e8c4253" = Spotify JSON Data
   const spotifyUrl = `https://open.spotify.com/oembed?url=${url}`;
   
   useEffect(() => {
