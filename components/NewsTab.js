@@ -27,9 +27,12 @@ export default function NewsTab(props) {
             <SpotifyCoverArt url={spotifyUrl} />
           </div>
           <div className="container player-holder">
-            {SpotifyPlayer(
-              `https://open.spotify.com/embed/track/${props.spotifyTrackID}?utm_source=generator&theme=0`
-            )}
+
+<SpotifyPlayer
+            url={ `https://open.spotify.com/embed/track/${props.spotifyTrackID}?utm_source=generator&theme=0`} size="small"
+            />
+              
+            
           </div>
         </div>
       </Link>

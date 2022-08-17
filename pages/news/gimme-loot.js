@@ -14,9 +14,7 @@ export default function gimmeLootNewsPost() {
       </div>
       <SongStreamingLinks />
       <div className="mt-2">
-        {SpotifyPlayer(
-          "https://open.spotify.com/embed/track/2KeqRslwPKHlyfbtTXjsX1?utm_source=generator&theme=0"
-        )}
+      <SpotifyPlayer url="https://open.spotify.com/embed/track/2KeqRslwPKHlyfbtTXjsX1?utm_source=generator&theme=0"/>
       </div>
 
       <p className="p-12 mt-6 border-2 border-white">

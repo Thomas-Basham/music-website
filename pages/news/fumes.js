@@ -26,9 +26,8 @@ export default function fumesNewsPost() {
         spotify="https://open.spotify.com/album/6uB0L73lIBOcVb55tmvkmK"
       />
       <div className="mt-2">
-        {SpotifyPlayer(
-          "https://open.spotify.com/embed/track/1jvs3FyXkbMya4jSJYJYge?si=3d66f0d16fd64eac?utm_source=generator&theme=0"
-        )}
+        <SpotifyPlayer url="https://open.spotify.com/embed/track/1jvs3FyXkbMya4jSJYJYge?si=3d66f0d16fd64eac?utm_source=generator&theme=0"/>
+        
       </div>
 
       <p className="p-12 mt-6 border-2 border-white">

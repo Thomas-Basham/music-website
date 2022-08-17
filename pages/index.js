@@ -59,9 +59,7 @@ export default function Home() {
         <h1>MUSIC</h1>
       </div>
 
-      {SpotifyPlayer(
-        "https://open.spotify.com/embed/artist/7fVW0REbd7DTaQCKgXBbHm?utm_source=generator&theme=0"
-      )}
+     <SpotifyPlayer url="https://open.spotify.com/embed/artist/7fVW0REbd7DTaQCKgXBbHm?utm_source=generator&theme=0"/>
 
       <div className="mt-12 mb-6 page-title">
         <h1>NEWS</h1>

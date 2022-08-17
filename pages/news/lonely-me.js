@@ -20,15 +20,13 @@ export default function lonelyMeNewsPost() {
       </div>
       <SongStreamingLinks spotify="https://open.spotify.com/album/4fTxg8tjCU1NUDYEywQLV1" apple="https://music.apple.com/us/album/lonely-me-single/1603526055?uo=4" amazon="https://music.amazon.com/albums/B09PTBL81N?tag=fndcmpgns-20" pandora="https://www.pandora.com/artist/tommy-basham/lonely-me-single/ALhzxdqqc5XXkJP" deezer="https://www.deezer.com/us/album/285645392"   />
       <div className="mt-2">
-        {SpotifyPlayer(
-          "https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"
-        )}
+      <SpotifyPlayer url="https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"/>
       </div>
 
       <p className="p-12 mt-6 border-2 border-white">
-        I think everyone goes through the feeling of loneliness at least once in
+        Everyone goes through the feeling of loneliness at least once in
         their life and everyone feels it and expresses it different. The lyrics
-        and vocals were written and performed by Stephano Prunebelli . I was
+        and vocals were written and performed by <a href="https://open.spotify.com/artist/0oALWWgW1Eg5lpxpfjBAW9" target={"_blank"} rel="noreferrer">Stephano Prunebelli</a>. I was
         captivated by his ability to express his emotions, and his story of
         loneliness. I hope you enjoy it! You can stream it on all major music
         platforms
