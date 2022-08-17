@@ -1,46 +1,35 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "/styles/Home.module.css";
-import Header from "../../components/Header";
 import { Row } from "react-bootstrap";
 import NewsTab from "../../components/NewsTab";
-import { SiPandora } from "react-icons/si";
-import {
-  FaApple,
-  FaAmazon,
-  FaDeezer,
-  FaSpotify,
-  FaItunes,
-} from "react-icons/fa";
 
-export default function LonelyMeCoverArt() {
+export default function Index() {
   return (
     <>
       <Row lg={4} sm={1} className="pt-6 ">
-        {/* <Link
-          href="/news/lonely-me"
-          className="p-6 m-2 text-left text-white border-2 border-white w-100 text-decoration-none"
-        >
-          <div className="p-6 w-100">
-          <h3>Lonely Me Out Now</h3>
-          <p className="float-left">January 7, 2022</p>
-
-          <SongStreamingLinks spotify="https://open.spotify.com/album/4fTxg8tjCU1NUDYEywQLV1" apple="https://music.apple.com/us/album/lonely-me-single/1603526055?uo=4" amazon="https://music.amazon.com/albums/B09PTBL81N?tag=fndcmpgns-20" pandora="https://www.pandora.com/artist/tommy-basham/lonely-me-single/ALhzxdqqc5XXkJP" deezer="https://www.deezer.com/us/album/285645392"   />
-
-          <div className="justify-between clear-both d-flex article-content">
-            <div className="container">
-            <SpotifyCoverArt url={LonelyMeUrl} />
-            </div>
-            <div className="container player-holder" >
-              {SpotifyPlayer(
-                "https://open.spotify.com/embed/track/0UJTi2a46HRnFD8wGFYjil?utm_source=generator&theme=0"
-              )}
-            </div>
-          </div>
-          </div>
-        </Link> */}
 
         <NewsTab
+          link="gimme-loot"
+          headLine="Gimme Loot Out Now"
+          date="August 17, 2022"
+          spotifyTrackID="2KeqRslwPKHlyfbtTXjsX1"
+          deezer="https://www.deezer.com/us/album/343200227"
+          amazon="https://music.amazon.com/albums/B0B8C5PBQX?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_HnlGxfjCBk0qxyIrbnTCzaEWC"
+          apple="https://music.apple.com/us/album/gimme-loot-single/1638622444?uo=4"
+          pandora="https://www.pandora.com/artist/tommy-basham/gimme-loot-single/AL6nfjK7qn9cvbZ?%24ios_deeplink_path=pandorav4%3A%2F%2Fbackstage%2Falbum%3Ftoken%3DAL%3A17492838&%24android_deeplink_path=pandorav4%3A%2F%2Fbackstage%2Falbum%3Ftoken%3DAL%3A17492838&~channel=Partner%20Catalog%20Search%20API&_branch_match_id=1088496109366142185&utm_source=Partner%20Catalog%20Search%20API&_branch_referrer=H4sIAAAAAAAAA62Py2rDMBBFv0bZGNvUNnFSMMU0KYRkEeiuGzOWp5ZqvSpNYvr3laDtFxRmMVzunMMIIhcey9KBmayHApwrlDRL%2BcSqZsKwkHXDzatOpCKre1a9xFnXtfg94VbHBDzJQHEhq%2FVXPkIQkPJZao25spbyIM2sMGb9ZWveP87tp9nz%2B%2Fi2iSppwzAhuuQeHJDofvD35k86Al8CwZwQoMabZnW0LWhYfegvsfbQNvtqV%2B8SMF57K6f%2FhLZHLsAYVN01fmvQZ89AoOycvSJ4LrL%2BevoGJWsi01ABAAA%3D"
+          />
+        
+        <NewsTab
+          link="fumes"
+          headLine="Fumes Out Now"
+          date="February 3, 2022"
+          spotifyTrackID="1jvs3FyXkbMya4jSJYJYge"
+          deezer="https://www.deezer.com/us/album/290466652"
+          amazon="https://music.amazon.com/albums/B09R2MMGDW"
+          apple="https://music.apple.com/us/album/fumes-single/1606804360?uo=4"
+          pandora="https://www.pandora.com/artist/tommy-basham/fumes-single/ALtz2J4PfnK9mf9"
+          />
+        
+        <NewsTab
+          link="lonely-me"
           headLine="Lonely Me Out Now"
           date="January 7, 2022"
           spotifyTrackID="0UJTi2a46HRnFD8wGFYjil"
@@ -54,4 +43,3 @@ export default function LonelyMeCoverArt() {
   );
 }
 
-// https://open.spotify.com/track/0UJTi2a46HRnFD8wGFYjil?si=db7b62083e8c4253
