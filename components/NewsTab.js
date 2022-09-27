@@ -2,6 +2,9 @@ import SpotifyPlayer from "/components/SpotifyPlayer";
 import SpotifyCoverArt from "/components/SpotifyCoverArt.js";
 import SongStreamingLinks from "/components/SongStreamingLinks";
 import Link from "next/link";
+import Nav from "react-bootstrap/Nav";
+
+import { NavLink } from "react-bootstrap";
 
 export default function NewsTab(props) {
   let spotifyUrl = `http://open.spotify.com/track/${props.spotifyTrackID}?si=db7b62083e8c4253`;

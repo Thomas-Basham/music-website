@@ -19,7 +19,7 @@ export default function Home() {
         music platforms.
         <br></br>
         <br></br>
-        Based out of seattle, Washington, I started my journey as a musician
+        Based out of Seattle, Washington, I started my journey as a musician
         when my mom bought me a guitar when I was 13. It became my method of
         escape through my troubled childhood. I never did get very good at
         playing guitar, probably because my attention span was short and I was
@@ -29,11 +29,10 @@ export default function Home() {
         too. Man, I love making things.
         <br></br>
         <br></br>
-        My love for music never changed, even though I played guitar less as I
-        aged. Nocturnal Wonderland, Texas 2012 was the first EDM festival I went
-        to, and I was hooked, which led me to learn how to produce music on my
-        own and then release music under different aliases, trying out different
-        things.
+        My love for music has been the fuel for my soul. Nocturnal
+        Wonderland, Texas 2012 was the first EDM festival I went to, and I was
+        hooked, which led me to learn how to produce music on my own and then
+        release music under different aliases, trying out different things.
         <br></br>
         <br></br>
         In 2020 I decided to add a formal education to my musical journey. I was
