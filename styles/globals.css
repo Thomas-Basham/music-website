@@ -107,7 +107,7 @@ footer .nav-link svg {
 .carousel-cell {
   width: 100% !important;
   /* full width */
-  height: 520px;
+  height: 600px;
   background: #222;
   /* center images in cells with flexbox */
   display: flex !important;
