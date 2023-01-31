@@ -4,7 +4,7 @@ import SongStreamingLinks from "../../components/SongStreamingLinks";
 export default function gimmeLootNewsPost() {
   // Go to spotify track and copy song link
   const url =
-    "http://open.spotify.com/track/0UJTi2a46HRnFD8wGFYjil?si=db7b62083e8c4253";
+    "https://open.spotify.com/track/0UJTi2a46HRnFD8wGFYjil?si=db7b62083e8c4253";
 
   return (
     <div className="flex-col p-6 text-white opacity-90 d-flex">
