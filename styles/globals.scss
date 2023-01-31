@@ -1,29 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&family=Oswald:wght@400&family=Roboto:wght@400&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: black;
 
+  --custom-font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --custom-bg-color: #101010;
+  --custom-panel-color: #222;
+  --custom-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.8);
+  --custom-color: #fff;
+  --custom-color-brand: #24b47e;
+  --custom-color-brand-secondary: magenta;
+  --custom-color-secondary: #666;
+  --custom-border: 2px solid #fff;
+  --custom-border-radius: 8px;
+  --custom-spacing: 5px;
+  background: black;
+  font-family: var(--custom-font-family) !important;
 }
 
 body div div {
   background: black;
-
 }
 
 main {
-
-  background: black;
+  background: var(--custom-bg-color);
   max-width: 1200px;
 }
-
+iframe {
+  html body {
+    background: var(--custom-bg-color) !important;
+  }
+  background-color: var(--custom-bg-color) !important;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -54,9 +68,7 @@ footer {
 .menu-dots {
   color: darkgrey !important;
   font-size: 18px !important;
-
 }
-
 
 .nav-link {
   color: white !important;
@@ -77,7 +89,6 @@ footer {
 
 .arrow-icon {
   position: absolute;
-
 }
 
 .link-container:hover .arrow-icon {
@@ -85,7 +96,6 @@ footer {
   position: absolute;
   top: -35px;
 }
-
 
 footer nav {
   margin: 0 auto !important;
@@ -99,16 +109,13 @@ footer .nav-link svg {
   border-radius: 50%;
 }
 
-
-
 /* FLICKITY */
-
 
 .carousel-cell {
   width: 100% !important;
   /* full width */
   height: 600px;
-  background: #222;
+  background: var(--custom-bg-color);
   /* center images in cells with flexbox */
   display: flex !important;
   align-items: center !important;
@@ -116,7 +123,6 @@ footer .nav-link svg {
 }
 
 .flickity-prev-next-button {
-
   background: url("../public/images/right-arroww.png") !important;
   background-position-x: 0% !important;
   background-position-y: 0% !important;
@@ -133,7 +139,6 @@ footer .nav-link svg {
 
 .flickity-button-icon {
   fill: transparent !important;
-
 }
 
 .page-title {
@@ -152,8 +157,6 @@ footer .nav-link svg {
   background: url(../public/images/title-bg.png);
 
   margin-top: 25px;
-
-
 }
 
 .page-title h1 {
@@ -183,12 +186,10 @@ footer input {
 
 footer button {
   visibility: hidden;
-
 }
 
-
 footer button:before {
-  content: 'Subscribe' !important;
+  content: "Subscribe" !important;
   visibility: visible !important;
   background-color: white !important;
   padding: 10px !important;
@@ -206,12 +207,9 @@ input {
   color: white !important;
 }
 
-
-
-
-
 @media only screen and (max-width: 600px) {
   main {
+    width: 99vw !important;
     margin-top: 250px;
     padding: 6px !important;
     padding-inline: 20px !important;
@@ -221,7 +219,6 @@ input {
 
   footer input {
     width: 50% !important;
-
   }
 
   footer .nav-link svg {
@@ -237,12 +234,12 @@ input {
     transform: rotate(180deg);
     top: 32% !important;
   }
-  .article-content{
-    flex-direction: column ;
+  .article-content {
+    flex-direction: column;
   }
 
-  .song-streaming-links{
-    width:50% !important;
+  .song-streaming-links {
+    width: 50% !important;
   }
 
   .carousel-cell {

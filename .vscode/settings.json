@@ -1,5 +1,4 @@
 {
-  "cSpell.words": [
-    "Flickity"
-  ]
+  "cSpell.words": ["Flickity"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
