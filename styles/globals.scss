@@ -92,6 +92,8 @@ footer {
 }
 
 .link-container:hover .arrow-icon {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
   position: absolute;
   top: -35px;
@@ -117,9 +119,15 @@ footer .nav-link svg {
   height: 600px;
   background: var(--custom-bg-color);
   /* center images in cells with flexbox */
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 
 .flickity-prev-next-button {
@@ -133,7 +141,8 @@ footer .nav-link svg {
 
 .flickity-prev-next-button.previous {
   left: 0;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   top: 44%;
 }
 
@@ -148,9 +157,11 @@ footer .nav-link svg {
   background: 0;
   position: relative;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin: 0 auto;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -170,9 +181,11 @@ footer .nav-link svg {
   font-size: 18px;
   font-weight: 600;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   -ms-flex-pack: center;
   font-family: Montserrat, sans-serif;
 }
@@ -184,7 +197,7 @@ footer input {
   margin-left: 40px;
 }
 
-footer button {
+footer button { 
   visibility: hidden;
 }
 
@@ -213,8 +226,13 @@ input {
     margin-top: 250px;
     padding: 6px !important;
     padding-inline: 20px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   footer input {
@@ -231,11 +249,15 @@ input {
 
   .flickity-prev-next-button.previous {
     left: 0;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
     top: 32% !important;
   }
   .article-content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .song-streaming-links {
@@ -243,6 +265,8 @@ input {
   }
 
   .carousel-cell {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: auto !important;
   }
